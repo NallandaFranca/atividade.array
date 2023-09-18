@@ -31,13 +31,20 @@ nomes = [];
         }
        }
        //lista fruta
-       function bf(){
+      function bf(){
         frutas = ["laranja", "uva", "manga", "goiaba", "morango"];
+        carrinho = [];
           digite = document.getElementById('pesquisa').value;
           if(frutas.includes(digite)){
             r = frutas.indexOf(digite)
-                alert(r + " foi removida")
+            
+                alert(digite + " foi adicionada ao carrinho")
                  frutas.splice(r, 1)
+                 carrinho.push(r);
                  alert("Estão disponíveis: " + frutas)
-                 digite = prompt("qual")
-                 alert("indisponivel")}}
+                 
+                 alert(carrinho)}
+
+                else{
+                    alert("erro")
+                }}
